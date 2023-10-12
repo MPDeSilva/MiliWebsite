@@ -1,1 +1,3 @@
-Lets get started huh now Mili!
+# Mili Website
+
+Modern and beautiful landing page built with tailwindcss and nextjs
