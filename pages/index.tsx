@@ -6,6 +6,7 @@ import { createClient } from "../prismicio";
 import PageContent from "../components/PageContent";
 import exp from "constants";
 import { NextPage } from "next";
+import Container from "../components/Container";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -29,6 +30,25 @@ const HomePage: NextPage<any> = ({ home }) => {
         />
         <CompanyBanner />
         <Features />
+        <Container>
+          <div className="flex flex-col mx-auto justify-center items-center w-full lg:pt-40 pt-20 text-center space-y-4">
+            <p className="lg:text-5xl md:text-4xl text-3xl font-medium">
+              The Website is still being built out
+            </p>
+            <p className="lg:text-4xl md:text-3xl text-2xl font-medium">
+              There's alot of ideas and things need to be done
+            </p>
+            <p className="lg:text-3xl md:text-2xl text-xl font-medium">
+              Like code-refactor, being fully prismic based, SEO..etc
+            </p>
+            <p className="lg:text-2xl md:text-xl text-lg font-medium">
+              I'll get there, I have soo many ideas
+            </p>
+            <p className="lg:text-xl md:text-lg text-md font-medium">
+              including connecting to cool api's etc
+            </p>
+          </div>
+        </Container>
       </main>
     </>
   );
