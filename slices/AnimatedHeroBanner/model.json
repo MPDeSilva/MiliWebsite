@@ -1,0 +1,50 @@
+{
+  "id": "animated_hero_banner",
+  "type": "SharedSlice",
+  "name": "AnimatedHeroBanner",
+  "description": "AnimatedHeroBanner",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "title": {
+          "type": "Text",
+          "config": {
+            "label": "Title",
+            "placeholder": ""
+          }
+        },
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "darkimage": {
+          "type": "Image",
+          "config": {
+            "label": "DarkImage",
+            "constraint": {},
+            "thumbnails": []
+          }
+        }
+      },
+      "items": {
+        "descriptive": {
+          "type": "Text",
+          "config": {
+            "label": "Descriptive",
+            "placeholder": ""
+          }
+        }
+      }
+    }
+  ]
+}

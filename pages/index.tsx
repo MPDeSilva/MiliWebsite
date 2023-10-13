@@ -1,11 +1,13 @@
 import Head from "next/head";
-import NavBar from "../components/NavBar";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/Features";
-import Footer from "../components/FooterSection";
 import CompanyBanner from "../components/CompanyBanner";
+import { createClient } from "../prismicio";
+import PageContent from "../components/PageContent";
+import exp from "constants";
+import { NextPage } from "next";
 
-export default function HomePage() {
+const HomePage: NextPage<any> = ({ home }) => {
   return (
     <>
       <Head>
@@ -16,13 +18,31 @@ export default function HomePage() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
+
       <main className="mb-40">
-        <HeroSection />
+        {/* <PageContent pageProps={home} /> */}
+        <HeroSection
+          Title={""}
+          Description={""}
+          List={[]}
+          ImageLink={undefined}
+        />
         <CompanyBanner />
         <Features />
       </main>
-      <Footer />
     </>
   );
+};
+
+export async function getStaticProps() {
+  const client = createClient();
+  const home = await client.getByUID("home", "homepage");
+
+  return {
+    props: {
+      home,
+    },
+  };
 }
+
+export default HomePage;

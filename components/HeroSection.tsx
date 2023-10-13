@@ -5,7 +5,21 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { useEffect, useState } from "react";
 import CursorBlinker from "./animation/CursorBlinker";
 
-export default function HeroSection() {
+export interface HeroSection {
+  Title: string;
+  Description: string;
+  List: string[];
+  ImageLink: any;
+}
+
+import React from "react";
+
+const HeroSection: React.FC<HeroSection> = ({
+  Title,
+  Description,
+  List,
+  ImageLink,
+}) => {
   const textIndex = useMotionValue(0);
   const texts = [
     "Comedian?",
@@ -53,20 +67,20 @@ export default function HeroSection() {
       className="relative overflow-hidden dark:bg-darker lg:overflow-auto"
       id="home"
     >
-      <div className="absolute inset-x-0 top-32 lg:hidden">
+      <div className="absolute inset-x-0 top-32 md:hidden">
         <div
           aria-hidden="true"
-          className="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-60 2xl:mx-auto 2xl:max-w-6xl"
+          className="grid grid-cols-2 -space-x-52 opacity-50 dark:opacity-60 2xl:mx-auto 2xl:max-w-normal"
         >
           <div className="h-60 bg-gradient-to-br from-primary to-blue-400 blur-3xl dark:from-blue-700"></div>
           <div className="h-72 rounded-full bg-gradient-to-r from-cyan-400 to-sky-300 blur-3xl dark:from-transparent dark:to-indigo-600"></div>
         </div>
       </div>
       <Container>
-        <div className="relative ml-auto pt-40 xl:pt-36">
-          <div className="gap-12 md:flex md:items-center">
-            <div className="text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2">
-              <h1 className="text-5xl font-black dark:text-white md:text-6xl xl:text-7xl">
+        <div className="flex ml-auto pt-32 md:pt-40 lg:pt-36">
+          <div className="md:flex flex-row md:items-center gap-12">
+            <div className="flex flex-col text-center sm:px-12 md:w-2/3 md:px-0 md:text-left lg:w-1/2">
+              <h1 className="text-5xl font-bold dark:text-white md:text-6xl xl:text-7xl">
                 Mili, the one and only {""}
                 <span>
                   <motion.span className="text-primary">
@@ -76,7 +90,7 @@ export default function HeroSection() {
                 </span>
               </h1>
               <div className="">
-                <p className="mt-8 text-lg text-gray-700 dark:text-gray-100">
+                <p className="mt-8 text-md text-gray-700 leading-normal dark:text-gray-100">
                   I'm a dynamic software engineer with a flair for front-end
                   magic. Proficient in React, Next.js, and TypeScript, I craft
                   seamless web experiences. Passionate about coding, I'm keen to
@@ -85,18 +99,22 @@ export default function HeroSection() {
                 </p>
                 <div className="mt-12 flex justify-center gap-4 sm:gap-6 md:justify-start">
                   <Button
-                    Element="a"
-                    emphasis="primary"
+                    primary={true}
                     label="Get in touch"
-                    to="/register"
-                    ui="max"
+                    secondary={false}
+                    link={""}
+                    onClick={function (): {} {
+                      throw new Error("Function not implemented.");
+                    }}
                   />
                   <Button
-                    Element="a"
-                    emphasis="secondary"
+                    secondary={true}
                     label="Learn more"
-                    to="#solution"
-                    ui="max"
+                    primary={false}
+                    link={""}
+                    onClick={function (): {} {
+                      throw new Error("Function not implemented.");
+                    }}
                   />
                 </div>
               </div>
@@ -126,4 +144,6 @@ export default function HeroSection() {
       </Container>
     </div>
   );
-}
+};
+
+export default HeroSection;

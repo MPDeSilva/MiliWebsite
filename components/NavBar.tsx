@@ -10,19 +10,19 @@ export default function NavBar() {
 
   const links: { to: string; label: string }[] = [
     {
-      to: "#about",
+      to: "about",
       label: "About",
     },
     {
-      to: "#workhistory",
+      to: "workhistory",
       label: "Work History",
     },
     {
-      to: "#skills",
+      to: "skills",
       label: "Skills",
     },
     {
-      to: "#education",
+      to: "education",
       label: "Education",
     },
     {
@@ -48,7 +48,7 @@ export default function NavBar() {
 
   return (
     <header>
-      <nav className="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
+      <nav className="fixed top-0 z-50 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent bg-white dark:bg-darker">
         <Container>
           <div className="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
             <input
@@ -59,15 +59,15 @@ export default function NavBar() {
               className="peer hidden"
               ref={inputReference}
             />
-            <div className="relative z-20 flex justify-between md:px-0 lg:w-max">
+            <div className="relative z-20 flex justify-between md:px-0 lg:w-max w-full">
               <a
-                href=""
+                href="/"
                 aria-label="logo"
                 className="flex items-center space-x-2 w-full h-full"
               >
                 <div
                   aria-hidden="true"
-                  className="flex flex-row space-x-1 w-full h-full items-center"
+                  className="flex flex-row space-x-1 h-full items-center"
                 >
                   <svg
                     width="35px"
@@ -75,7 +75,8 @@ export default function NavBar() {
                     viewBox="0 0 32 32"
                     xmlns="http://www.w3.org/2000/svg"
                     stroke="currentColor"
-                    className="m-auto text-gray-700 dark:text-white"
+                    strokeWidth={0.5}
+                    className="m-auto text-primary fill-primary dark:text-white dark:fill-white"
                   >
                     <path d="M 2 7 L 2 25 L 30 25 L 30 7 L 2 7 z M 4 9 L 28 9 L 28 23 L 4 23 L 4 9 z M 6 11 L 6 21 L 9 21 C 10.654 21 12 19.654 12 18 L 12 14 C 12 12.346 10.654 11 9 11 L 6 11 z M 16 11 C 14.897 11 14 11.897 14 13 L 14 19 C 14 20.103 14.897 21 16 21 L 18 21 L 18 19 L 16 19 L 16 17 L 18 17 L 18 15 L 16 15 L 16 13 L 18 13 L 18 11 L 16 11 z M 19.691406 11 L 21.775391 20.025391 C 21.907391 20.595391 22.415 21 23 21 C 23.585 21 24.092609 20.595391 24.224609 20.025391 L 26.308594 11 L 24.255859 11 L 23 16.439453 L 21.744141 11 L 19.691406 11 z M 8 13 L 9 13 C 9.552 13 10 13.448 10 14 L 10 18 C 10 18.552 9.552 19 9 19 L 8 19 L 8 13 z" />
                   </svg>
@@ -96,12 +97,17 @@ export default function NavBar() {
                   <div
                     aria-hidden="true"
                     id="line"
-                    className="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"
+                    className="m-auto h-0.5 w-5 rounded bg-primary transition duration-300 dark:bg-gray-300"
                   ></div>
                   <div
                     aria-hidden="true"
                     id="line2"
-                    className="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"
+                    className="m-auto mt-1 h-0.5 w-5 rounded bg-primary transition duration-300 dark:bg-gray-300"
+                  ></div>
+                  <div
+                    aria-hidden="true"
+                    id="line3"
+                    className="m-auto mt-1 h-0.5 w-5 rounded bg-primary transition duration-300 dark:bg-gray-300"
                   ></div>
                 </label>
               </div>

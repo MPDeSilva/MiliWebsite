@@ -4,7 +4,7 @@ import Image from "next/image.js";
 
 export default function Features() {
   return (
-    <div className="relative pt-32 md:pt-44" id="features">
+    <div className="relative pt-20 md:pt-40" id="features">
       <Container>
         <div className="mx-auto md:w-3/5">
           <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
@@ -16,8 +16,8 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="mt-16 md:mt-20">
-          <div className="relative grid rounded-3xl border border-gray-200 p-1 dark:border-gray-800 lg:grid-cols-3">
+        <div className="mt-16 md:mt-10">
+          <div className="relative grid rounded-3xl border border-gray-200 p-1 dark:border-gray-800 md:grid-cols-3">
             <Feature
               title="Solid Expertise"
               description="With my experience in software development, I offer a solid foundation in crafting efficient solutions and a deep understanding of various technologies."
@@ -66,7 +66,7 @@ export default function Features() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#000000"
                 viewBox="0 0 40 40"
-                enable-background="new 0 0 40 40"
+                enableBackground="new 0 0 40 40"
                 stroke="currentColor"
                 className="m-auto h-10 w-10 text-gray-700 dark:text-white"
               >
@@ -131,16 +131,16 @@ export default function Features() {
                 </title>
                 <g
                   id="Free-Icons"
-                  stroke-width="1"
+                  strokeWidth="1"
                   fill="none"
-                  fill-rule="evenodd"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  fillRule="evenodd"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 >
                   <g
                     transform="translate(-1265.000000, -156.000000)"
                     id="Group"
-                    stroke-width="1"
+                    strokeWidth="1"
                   >
                     <g
                       transform="translate(1263.000000, 154.000000)"
@@ -168,11 +168,11 @@ export default function Features() {
                 stroke="currentColor"
                 className="m-auto h-6 w-6 text-gray-700 dark:text-white"
               >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                 <g
                   id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></g>
                 <g id="SVGRepo_iconCarrier">
                   <path className="st0" d="M10,10 L20,20" />
