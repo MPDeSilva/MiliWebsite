@@ -7,6 +7,7 @@ import PageContent from "../components/PageContent";
 import exp from "constants";
 import { NextPage } from "next";
 import Container from "../components/Container";
+import Reviews from "../components/Reviews";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -30,6 +31,7 @@ const HomePage: NextPage<any> = ({ home }) => {
         />
         <CompanyBanner />
         <Features />
+        <Reviews />
         <Container>
           <div className="flex flex-col mx-auto justify-center items-center w-full lg:pt-40 pt-20 text-center space-y-4">
             <p className="lg:text-5xl md:text-4xl text-3xl font-medium dark:text-white">
@@ -54,15 +56,15 @@ const HomePage: NextPage<any> = ({ home }) => {
   );
 };
 
-export async function getStaticProps() {
-  const client = createClient();
-  const home = await client.getByUID("home", "homepage");
+// export async function getStaticProps() {
+//   const client = createClient();
+//   const home = await client.getByUID("home", "homepage");
 
-  return {
-    props: {
-      home,
-    },
-  };
-}
+//   return {
+//     props: {
+//       home,
+//     },
+//   };
+// }
 
 export default HomePage;

@@ -12,7 +12,7 @@ const CompanyBanner = () => {
         <div className="mt-8 flex md:flex-row flex-col items-center justify-center gap-6 brightness-75 contrast-200 grayscale dark:brightness-200 dark:contrast-0 sm:justify-between lg:gap-24">
           <Image
             className="h-9 w-auto md:h-8 lg:h-14"
-            src="images/clients/ember.svg"
+            src="images/workplaces/ember.svg"
             loading="lazy"
             alt="ember"
             width="100"
@@ -20,7 +20,7 @@ const CompanyBanner = () => {
           />
           <Image
             className="h-12 w-auto md:h-10 lg:h-14"
-            src="images/clients/lanistar.svg"
+            src="images/workplaces/lanistar.svg"
             loading="lazy"
             alt="lanistar"
             width="100"
@@ -28,7 +28,7 @@ const CompanyBanner = () => {
           />
           <Image
             className="h-20 w-auto md:h-10 lg:h-14"
-            src="/images/clients/lucas.png"
+            src="/images/workplaces/lucas.png"
             loading="lazy"
             alt="lucas systems"
             width="100"
@@ -36,7 +36,7 @@ const CompanyBanner = () => {
           />
           <Image
             className="h-12 w-auto md:h-10 lg:h-14"
-            src="images/clients/tesco.svg"
+            src="images/workplaces/tesco.svg"
             loading="lazy"
             alt="tesco"
             width="100"
@@ -44,7 +44,7 @@ const CompanyBanner = () => {
           />
           <Image
             className="h-8 w-auto md:h-10 lg:h-14"
-            src="images/clients/lords.svg"
+            src="images/workplaces/lords.svg"
             loading="lazy"
             alt="lords"
             width="100"

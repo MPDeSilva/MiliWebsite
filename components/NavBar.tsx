@@ -10,23 +10,23 @@ export default function NavBar() {
 
   const links: { to: string; label: string }[] = [
     {
-      to: "about",
+      to: "#about",
       label: "About",
     },
     {
-      to: "workhistory",
+      to: "#workhistory",
       label: "Work History",
     },
     {
-      to: "skills",
+      to: "#skills",
       label: "Skills",
     },
     {
-      to: "education",
+      to: "#education",
       label: "Education",
     },
     {
-      to: "references",
+      to: "#references",
       label: "References",
     },
   ];
