@@ -8,6 +8,9 @@ import exp from "constants";
 import { NextPage } from "next";
 import Container from "../components/Container";
 import Reviews from "../components/Reviews";
+import About from "../components/About";
+import SocialBanner from "../components/SocialBanner";
+import Education from "../components/Education";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -30,7 +33,10 @@ const HomePage: NextPage<any> = ({ home }) => {
           ImageLink={undefined}
         />
         <CompanyBanner />
+        <About />
+        <SocialBanner />
         <Features />
+        <Education />
         <Reviews />
         <Container>
           <div className="flex flex-col mx-auto justify-center items-center w-full lg:pt-40 pt-20 text-center space-y-4">

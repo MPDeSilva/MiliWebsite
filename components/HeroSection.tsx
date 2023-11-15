@@ -20,6 +20,20 @@ const HeroSection: React.FC<HeroSection> = ({
   List,
   ImageLink,
 }) => {
+  const sendEmail = () => {
+    const email = "milindapds@hotmail.com";
+    const subject = "Hey Mili!, I saw your website and I'm interested in you!";
+    const body = "Hi Mili, I saw your website and I'm interested in you!";
+
+    // Combine the email, subject, and body into a `mailto` link
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Open the default email client
+    window.location.href = mailtoLink;
+  };
+
   const textIndex = useMotionValue(0);
   const texts = [
     "Comedian?",
@@ -102,19 +116,15 @@ const HeroSection: React.FC<HeroSection> = ({
                     primary={true}
                     label="Get in touch"
                     secondary={false}
-                    link={""}
-                    onClick={function (): {} {
-                      throw new Error("Function not implemented.");
-                    }}
+                    onClick={sendEmail}
                   />
                   <Button
                     secondary={true}
-                    label="Learn more"
+                    label="Download CV"
                     primary={false}
-                    link={""}
-                    onClick={function (): {} {
-                      throw new Error("Function not implemented.");
-                    }}
+                    link={
+                      "https://drive.google.com/file/d/11irHrep49kzV1yMktmNza-gibJ1ZJGfE/view?usp=sharing"
+                    }
                   />
                 </div>
               </div>
