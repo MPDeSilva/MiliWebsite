@@ -7,7 +7,7 @@ const Education = () => {
     <Container>
       <div
         id="education"
-        className="flex flex-col mx-auto justify-center items-center space-y-8 w-full pt-32 md:pt-20 text-gray-600 dark:text-gray-300"
+        className="flex flex-col mx-auto justify-center items-center space-y-8 w-full pt-20 md:pt-40 text-gray-600 dark:text-gray-300"
       >
         <div>
           <h2 className="text-center text-3xl font-bold text-gray-900 dark:text-white md:text-4xl lg:text-5xl">
@@ -18,7 +18,7 @@ const Education = () => {
           </p>
         </div>
 
-        <div className="flex md:flex-row flex-col max-w-lg h-full overflow-hidden bg-white rounded-lg border border-gray-200 dark:border-gray-700">
+        <div className="flex md:flex-row flex-col max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
           <div className="md:w-1/3 h-full">
             <Image
               src="/images/coventry-uni.webp"
@@ -28,10 +28,10 @@ const Education = () => {
             />
           </div>
           <div className="md:w-2/3 p-4">
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               Coventry University
             </h1>
-            <p className="font-medium text-sm text-gray-600">
+            <p className="font-medium text-sm text-gray-600 dark:text-white">
               BSc (Hons) Computer Science
             </p>
             <p className="mt-3 text-gray-600 dark:text-gray-400">
@@ -41,12 +41,12 @@ const Education = () => {
             </p>
           </div>
         </div>
-        <div className="flex md:flex-row flex-col-reverse max-w-lg h-full overflow-hidden bg-white rounded-lg border border-gray-200 dark:border-gray-700">
+        <div className="flex md:flex-row flex-col-reverse max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 p-px dark:bg-gray-900">
           <div className="md:w-2/3 p-4">
-            <h1 className="text-3xl font-bold text-gray-900">
+            <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               Kingsley Academy
             </h1>
-            <p className="font-medium text-sm text-gray-600">
+            <p className="font-medium text-sm text-gray-600 dark:text-white">
               Various GCSEs and A-Levels
             </p>
             <p className="mt-3 text-gray-600 dark:text-gray-400">

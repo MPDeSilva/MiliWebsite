@@ -5,7 +5,7 @@ import Image from "next/image.js";
 export default function Reviews() {
   return (
     <div
-      className="pt-32 md:pt-20 text-gray-600 dark:text-gray-300"
+      className="pt-20 md:pt-40 text-gray-600 dark:text-gray-300"
       id="references"
     >
       <Container>
