@@ -2,15 +2,13 @@ import Head from "next/head";
 import HeroSection from "../components/HeroSection";
 import Features from "../components/Features";
 import CompanyBanner from "../components/CompanyBanner";
-import { createClient } from "../prismicio";
-import PageContent from "../components/PageContent";
-import exp from "constants";
 import { NextPage } from "next";
 import Container from "../components/Container";
 import Reviews from "../components/Reviews";
 import About from "../components/About";
 import SocialBanner from "../components/SocialBanner";
 import Education from "../components/Education";
+import Skills from "../components/Skills";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -36,6 +34,7 @@ const HomePage: NextPage<any> = ({ home }) => {
         <About />
         <SocialBanner />
         <Features />
+        <Skills />
         <Education />
         <Reviews />
         <Container>
