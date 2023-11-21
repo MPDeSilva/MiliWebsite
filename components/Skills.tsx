@@ -454,6 +454,27 @@ const Skills = () => {
           >
             <Image
               className="rounded-full border"
+              src={"/images/skills/firebase.webp"}
+              alt="firebase"
+              height={50}
+              width={50}
+              objectFit="contain"
+            />
+            <div>
+              <p className="font-bold text-gray-900 dark:text-white">
+                Firebase
+              </p>
+              <p className="text-gray-600 dark:text-gray-500">
+                Back-end Platform
+              </p>
+            </div>
+          </div>
+          <div
+            className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900
+ border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4"
+          >
+            <Image
+              className="rounded-full border"
               src={"/images/skills/ssms.webp"}
               alt="ssms"
               height={50}
