@@ -9,6 +9,7 @@ import About from "../components/About";
 import SocialBanner from "../components/SocialBanner";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
+import Faqs from "../components/Faqs";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -37,6 +38,7 @@ const HomePage: NextPage<any> = ({ home }) => {
         <Skills />
         <Education />
         <Reviews />
+        <Faqs />
         <Container>
           <div className="flex flex-col mx-auto justify-center items-center w-full lg:pt-40 pt-20 text-center space-y-4">
             <p className="lg:text-5xl md:text-4xl text-3xl font-medium dark:text-white">
@@ -46,13 +48,14 @@ const HomePage: NextPage<any> = ({ home }) => {
               There's alot of ideas and things need to be done
             </p>
             <p className="lg:text-3xl md:text-2xl text-xl font-medium dark:text-white">
-              Like code-refactor, being fully prismic based, SEO..etc
+              Like code-refactor, adding testing framework, being fully prismic
+              based, SEO..etc
             </p>
             <p className="lg:text-2xl md:text-xl text-lg font-medium dark:text-white">
               I'll get there, I have soo many ideas
             </p>
             <p className="lg:text-xl md:text-lg text-md font-medium dark:text-white">
-              including connecting to cool api's etc
+              including connecting to cool API's etc
             </p>
           </div>
         </Container>
