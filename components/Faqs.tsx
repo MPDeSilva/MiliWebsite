@@ -48,7 +48,7 @@ export default function Faqs() {
             question="What are you looking for in your next role?"
           >
             <p className="pb-6 text-base text-gray-600 dark:text-gray-400">
-              I would like to cntinue my development on the tech stack I'm most
+              I would like to continue my development on the tech stack I'm most
               familiar with, I would love to make a real impact and postive
               difference to whever I work. I would like to be a key player
               within a team and hellp others be their best selves and hopefully

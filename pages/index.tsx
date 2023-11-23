@@ -10,6 +10,7 @@ import SocialBanner from "../components/SocialBanner";
 import Education from "../components/Education";
 import Skills from "../components/Skills";
 import Faqs from "../components/Faqs";
+import WorkHistory from "../components/WorkHistory";
 
 const HomePage: NextPage<any> = ({ home }) => {
   return (
@@ -35,6 +36,7 @@ const HomePage: NextPage<any> = ({ home }) => {
         <About />
         <SocialBanner />
         <Features />
+        <WorkHistory />
         <Skills />
         <Education />
         <Reviews />
