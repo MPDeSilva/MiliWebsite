@@ -46,18 +46,11 @@ const HomePage: NextPage<any> = ({ home }) => {
             <p className="lg:text-5xl md:text-4xl text-3xl font-medium dark:text-white">
               The Website is still being built out
             </p>
-            <p className="lg:text-4xl md:text-3xl text-2xl font-medium dark:text-white">
-              There's alot of ideas and things need to be done
-            </p>
-            <p className="lg:text-3xl md:text-2xl text-xl font-medium dark:text-white">
-              Like code-refactor, adding testing framework, being fully prismic
-              based, SEO..etc
-            </p>
-            <p className="lg:text-2xl md:text-xl text-lg font-medium dark:text-white">
-              I'll get there, I have soo many ideas
-            </p>
-            <p className="lg:text-xl md:text-lg text-md font-medium dark:text-white">
-              including connecting to cool API's etc
+            <p className="lg:text-2xl md:text-xl text-lg font-medium dark:text-white md:max-w-md">
+              There's alot of ideas and things need to be done Like a Big
+              Code-Refactor, adding Testing Framework, being fully Prismic
+              based, SEO..etc I'll get there, I have soo many ideas including
+              connecting to cool API's etc
             </p>
           </div>
         </Container>

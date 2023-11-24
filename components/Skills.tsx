@@ -22,7 +22,7 @@ const Skills = () => {
             Industry Experience
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div
             className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900
  border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4"
@@ -247,7 +247,7 @@ const Skills = () => {
             Univeristy/Training Experience
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div
             className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900
  bg-white dark:bg-gray-900 border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4"
@@ -373,7 +373,7 @@ const Skills = () => {
             SQL/NoSQL Experience
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900 border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4">
             <Image
               className="rounded-full border"
@@ -516,7 +516,7 @@ const Skills = () => {
             Project Management/Knowlege Transfer tools
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900 border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4">
             <Image
               className="rounded-full border"
@@ -716,7 +716,7 @@ const Skills = () => {
             Tools for Analysis
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900 border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4">
             <Image
               className="rounded-full border"
@@ -817,7 +817,7 @@ const Skills = () => {
             Design, Content, Graphics, Video, Audio
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           <div className="flex flex-row mx-auto items-center border bg-white dark:bg-gray-900 border-gray-150 dark:border-gray-700 rounded-xl shadow-custom p-4 w-80 space-x-4">
             <Image
               className="rounded-full border"

@@ -19,15 +19,15 @@ const Education = () => {
         </div>
 
         <div className="flex md:flex-row flex-col max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-          <div className="md:w-1/3 h-full">
+          <div className="md:w-1/4">
             <Image
               src="/images/coventry-uni.webp"
-              width={900}
-              height={500}
+              width={385}
+              height={100}
               alt="education"
             />
           </div>
-          <div className="md:w-2/3 p-4">
+          <div className="md:w-3/4 p-4">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               Coventry University
             </h1>
@@ -42,7 +42,7 @@ const Education = () => {
           </div>
         </div>
         <div className="flex md:flex-row flex-col-reverse max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 p-px dark:bg-gray-900">
-          <div className="md:w-2/3 p-4">
+          <div className="md:w-3/4 p-4">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               Kingsley Academy
             </h1>
@@ -56,11 +56,11 @@ const Education = () => {
               Enterprise Trust.
             </p>
           </div>
-          <div className="md:w-1/3 h-full">
+          <div className="md:w-1/4 h-full">
             <Image
               src="/images/kingsley-academy.webp"
-              width={900}
-              height={500}
+              width={385}
+              height={100}
               alt="education"
             />
           </div>

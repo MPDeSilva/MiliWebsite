@@ -38,8 +38,8 @@ export default function Faqs() {
           </Faq>
           <Faq id="faq-3" question="Was this whole website built by you?">
             <p className="pb-6 text-base text-gray-600 dark:text-gray-400">
-              Yup, using my knowledge of React, NextJS, Javascript and
-              TailwindCSS and my hosting service Vercel, I was able to build
+              Yup, using my knowledge of React, NextJS, Javascript, Typescript
+              and TailwindCSS and my hosting service Vercel, I was able to build
               this website.
             </p>
           </Faq>
