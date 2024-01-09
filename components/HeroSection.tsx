@@ -1,9 +1,6 @@
 import Button from "./Button";
 import Container from "./Container";
 import Image from "next/image.js";
-import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { useEffect, useState } from "react";
-import CursorBlinker from "./animation/CursorBlinker";
 
 export interface HeroSection {
   Title: string;
