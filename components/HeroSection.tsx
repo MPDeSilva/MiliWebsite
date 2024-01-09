@@ -13,6 +13,7 @@ export interface HeroSection {
 }
 
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection: React.FC<HeroSection> = ({
   Title,
@@ -34,47 +35,20 @@ const HeroSection: React.FC<HeroSection> = ({
     window.location.href = mailtoLink;
   };
 
-  const textIndex = useMotionValue(0);
   const texts = [
     "Comedian?",
+    1000,
     "Superhero?",
-    "Idiot?",
+    1000,
+    "Magician?",
+    1000,
     "Legend?",
+    1000,
     "Software/Web Developer",
+    1000,
     "Software/Web Developer.",
+    1000,
   ];
-
-  const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
-  const count = useMotionValue(0);
-  const rounded = useTransform(count, (latest) => Math.round(latest));
-  const displayText = useTransform(rounded, (latest) =>
-    baseText.get().slice(0, latest)
-  );
-  const updatedThisRound = useMotionValue(true);
-
-  useEffect(() => {
-    animate(count, 60, {
-      type: "tween",
-      duration: 1,
-      ease: "easeIn",
-      repeat: Infinity,
-      repeatType: "reverse",
-      repeatDelay: 1,
-      onUpdate(latest) {
-        if (updatedThisRound.get() === true && latest > 0) {
-          updatedThisRound.set(false);
-        } else if (updatedThisRound.get() === false && latest === 0) {
-          if (textIndex.get() === texts.length - 1) {
-            textIndex.set(0);
-          } else {
-            textIndex.set(textIndex.get() + 1);
-          }
-          updatedThisRound.set(true);
-        }
-      },
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   return (
     <div
@@ -97,10 +71,12 @@ const HeroSection: React.FC<HeroSection> = ({
               <h1 className="text-5xl font-bold dark:text-white md:text-6xl xl:text-7xl">
                 Mili, the one and only {""}
                 <span>
-                  <motion.span className="text-primary">
-                    {displayText}
-                  </motion.span>
-                  <CursorBlinker />
+                  <TypeAnimation
+                    className="text-primary"
+                    sequence={texts}
+                    speed={20}
+                    repeat={0}
+                  />
                 </span>
               </h1>
               <div className="">

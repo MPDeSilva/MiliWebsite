@@ -243,7 +243,7 @@ const Skills = () => {
           <h2 className="text-center text-md font-bold text-gray-900 dark:text-white text-gray-900 dark:text-white md:text-lg lg:text-xl">
             Programming
           </h2>
-          <p className=" ext-center text-gray-600 dark:text-gray-300">
+          <p className="text-center text-gray-600 dark:text-gray-300">
             Univeristy/Training Experience
           </p>
         </div>

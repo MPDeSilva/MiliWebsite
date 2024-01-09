@@ -19,7 +19,7 @@ const Education = () => {
         </div>
 
         <div className="flex md:flex-row flex-col max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-          <div className="md:w-1/4">
+          <div className="md:w-2/5">
             <Image
               src="/images/coventry-uni.webp"
               width={385}
@@ -34,33 +34,43 @@ const Education = () => {
             <p className="font-medium text-sm text-gray-600 dark:text-white">
               BSc (Hons) Computer Science
             </p>
-            <p className="mt-3 text-gray-600 dark:text-gray-400">
-              Coventry University is a public research university in Coventry,
-              England. The origins of Coventry University can be linked to the
-              founding of the Coventry School of Design in 1843
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+              As a graduate of Coventry University's BSc Computer Science
+              course, I delved deeply into both the theoretical and practical
+              aspects of software development. The course offered a
+              comprehensive exploration of key areas such as artificial
+              intelligence, parallel programming, and data science, which were
+              instrumental in preparing me for a dynamic career in the tech
+              industry. The hands-on experience, coupled with a solid foundation
+              in theoretical principles, equipped me to tackle complex software
+              challenges and contribute significantly in the realm of computer
+              science.
             </p>
           </div>
         </div>
         <div className="flex md:flex-row flex-col-reverse max-w-normal h-full overflow-hidden bg-white rounded-xl border border-gray-200 dark:border-gray-700 p-px dark:bg-gray-900">
-          <div className="md:w-3/4 p-4">
+          <div className="w-full p-4">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
               Kingsley Academy
             </h1>
             <p className="font-medium text-sm text-gray-600 dark:text-white">
               Various GCSEs and A-Levels
             </p>
-            <p className="mt-3 text-gray-600 dark:text-gray-400">
-              Kingsley Academy is an 11–18 mixed, secondary school and sixth
-              form with academy status in Hounslow, Greater London, England. It
-              is part of the Academies Enterprise Trust via its London Academies
-              Enterprise Trust.
+            <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+              During my time at Kingsley Academy, I received an enriching and
+              comprehensive education at both the GCSE and A-Level stages. The
+              range of subjects offered allowed me to explore my interests
+              deeply, particularly in the sciences and computing, laying a
+              strong foundation for my future academic pursuits. The dedicated
+              teachers and supportive learning environment were instrumental in
+              helping me achieve my goals during my secondary school years.
             </p>
           </div>
-          <div className="md:w-1/4 h-full">
+          <div className="md:w-2/5 flex h-full w-full justify-end">
             <Image
               src="/images/kingsley-academy.webp"
               width={385}
-              height={100}
+              height={90}
               alt="education"
             />
           </div>
