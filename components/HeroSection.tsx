@@ -96,7 +96,7 @@ const HeroSection: React.FC<HeroSection> = ({
                     label="Download CV"
                     primary={false}
                     link={
-                      "https://drive.google.com/file/d/1jINMPeKbc4A2MrXKoWY40iXDuPINKZf2/view?usp=drive_link"
+                      "https://drive.google.com/file/d/1jK7d2zckZHWBACYgPal6yqK0hvV3QCrN/view?usp=drive_link"
                     }
                   />
                 </div>

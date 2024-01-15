@@ -1,4 +1,4 @@
-import { LegacyRef } from "react";
+import { LegacyRef, useEffect, useState } from "react";
 import Container from "./Container";
 import React from "react";
 
@@ -10,23 +10,23 @@ export default function NavBar() {
 
   const links: { to: string; label: string }[] = [
     {
-      to: "#about",
+      to: "about",
       label: "About",
     },
     {
-      to: "#workhistory",
+      to: "workhistory",
       label: "Work History",
     },
     {
-      to: "#skills",
+      to: "skills",
       label: "Skills",
     },
     {
-      to: "#education",
+      to: "education",
       label: "Education",
     },
     {
-      to: "#references",
+      to: "references",
       label: "References",
     },
   ];
@@ -125,8 +125,8 @@ export default function NavBar() {
                   {links.map((link, index) => (
                     <li key={index}>
                       <a
-                        href={link.to}
-                        className="block transition hover:text-primary dark:hover:text-white md:px-4"
+                        href={`#${link.to}`}
+                        className="block transition  hover:text-primary dark:hover:text-white md:px-4 cursor-pointer"
                         onClick={handleClickLink}
                       >
                         <span>{link.label}</span>
@@ -138,7 +138,7 @@ export default function NavBar() {
 
               <div className="mt-12 lg:mt-0">
                 <a
-                  href="https://drive.google.com/file/d/1jINMPeKbc4A2MrXKoWY40iXDuPINKZf2/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1jK7d2zckZHWBACYgPal6yqK0hvV3QCrN/view?usp=drive_link"
                   className="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max"
                 >
                   <span className="relative text-sm font-semibold text-white">
